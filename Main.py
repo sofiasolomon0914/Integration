@@ -1,5 +1,4 @@
 
-
 # NOTES FROM PYTHON ACTIVITY 1: Print Statements
 
 print("Go!")
@@ -105,19 +104,28 @@ x < y
 x == y
 x != y
 x >= z
-x <= z
-x+y > 2*x
-y*x-z != 4%4+16
-pow(x,2) == abs(-16)
+x <= z x+ y > 2 * x
+y * x - z != 4 % 4 + 16
+pow(x, 2) == abs(-16)
+# Using word will not work because they have to be integers,
+# Using words will lead to a correct output
 
+# To test more than one condition use a logic operator to create a compound condition
+(age > 17) and (hasLicense == true)
+# To be true the they must have a license and be at least 17
+(cost < 20.00) or (shipping == 0.00)
+# If the cost is greater than 20 then the shipping is free
+not (credits > 120)
+# There can be no more than 120 credits
 
 
 # NOTES FROM PYTHON ACTIVITY 6: IF-ELSE Statements
 
+# Below is an example of if-else being used to run a code
 grade = 95
 if grade >= 94:
     print("Excellent")
-# This code says that if the grade submitted is greater than 94 then the output will be Execellent!
+# This code says that if the grade submitted is greater than 94 then the output will be Excellent!
 originalPrice = float(input("Enter the original cost of the item: "))
 salePrice = float(input("Enter the sale price: "))
 percentOff = int((originalPrice - salePrice) / originalPrice * 100)
@@ -126,3 +134,31 @@ print("Sale price: $", format(salePrice, ".2f"), sep="")
 print("Percent off: ", format(percentOff, "d"), "%", sep="")
 if (percentOff >= 50):
     print("You got a great sale!")
+# Float is used to return a floating point number from a number or a string
+
+# Another example of using if-else
+temperatureString = input("Enter the water temperature in degees Fahrenheit: ")
+temperature = int(temperatureString)
+if temperature >= 212:
+    print("Water is boiling.")
+else:
+    print("The water is not boiling.")
+
+
+# PYTHON ACTIVITY 7: Nested IF-ELSE Statements
+# In python you can use elif instead of IF-ELSE Statement
+
+# The following is a program example using elif
+grade = int(input("Enter your grade: "))
+if grade > 100 or grade < 0:
+    print("Error")
+elif grade >= 90:
+    print("Very Good!")
+elif 80 <= grade < 89:
+    print("Good!")
+elif 70 <= grade < 80:
+    print("Satisfactory")
+elif 60 <= grade < 70:
+    print("Fair")
+elif grade < 60:
+    print("Poor")
