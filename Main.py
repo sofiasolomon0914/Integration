@@ -162,3 +162,107 @@ elif 60 <= grade < 70:
     print("Fair")
 elif grade < 60:
     print("Poor")
+
+
+# PYTHON ACTIVITY 8: Looping Structures(WHILE Loops)
+
+# The following is an example of a while loop
+name = input("Enter your name: ")
+x = 0
+while(x < 20):
+    print(name)
+    x = x + 1
+# The statement above re-evaluates the value of x by adding 1 to x and then that being the new value and so on
+
+# The following example will print the number entered and all preceding number down to 0
+number = int(input("enter a number: "))
+x = 1
+while(x <= number):
+    if(x%10 == 0):
+        print(x)
+    else:
+        print(x, end=" ")
+    x = x + 1
+
+
+# PYTHON ACTIVITY 9: Looping Structures: FOR Loops
+
+# The example below will show two programs that produce the same output, but one using a WHILE loop and the other using a FOR Loop
+name = input("Enter your name: ")
+x = 0
+while(x < 20):
+    print(name)
+    x = x + 1
+name = input("Enter your name: ")
+for x in range(20):
+    print(name)
+# Notice that the FOR Loop is more concise
+
+# The range function restricts the output to only the number included in the range
+# The following will output [ 0 1 2 3 4 ]
+for x in range(5):
+    print(x, end=" ")
+
+# The following will output [1 2 3 4]
+for x in range(1,5):
+    print(x, end=" ")
+
+# The following will output [ 3 5 7 9 11 13 15 17 19 ]
+for x in range(3,20,2):
+    print(x, end=" ")
+
+# The following will output [ 0 1 2 3 4 5 ]
+numIterations = 6
+for x in range(numIterations):
+    print(x, end=" ")
+
+# The following will output [ 1 2 3 4 5 6 ]
+numIterations = 6
+for x in range(1, numIterations+1):
+    print(x, end=" ")
+
+# The following code will list a flavor 4 times
+favorite = input("Enter your favorite ice cream flavor: ")
+for x in range(1,5):
+    print(str(x) + ".", favorite, end="\t")
+# Keep in mind that this program turns the integer into a string so that is can shown in the output
+
+# The following program will prompt the user for 5 numbers and then add them all together
+total = 0
+for x in range(5):
+    number = int(input("Enter a number: "))
+    total += number
+print("The total is:",total)
+
+
+# PYTHON ACTIVITY 10: Looping Structures -- Nested Loops
+
+# Refer to the following example for a nested loop
+name = input("What is your name: ")
+for x in range(5):
+    for x in range(3):
+        print(name + " ", end=" ")
+    print()
+
+# Create a code segment that prompts the user for a number between 1 and 10
+# and then prints that many asterisks (*) on one line.
+# Use a FOR loop. Although you should test the user input to be sure it is in range (between 1 & 10),
+# you do not need to do that here.
+numOne = int(input("Enter how many you would like in the x-axis: "))
+numTwo = int(input("Enter how many you would like in the y-axis: "))
+name = "*"
+for x in range(numOne):
+    for x in range(numTwo):
+        print(name+" ", end=" ")
+    print()
+
+# Edit the program above so that it prints numbers instead of asterisks
+height = int(input("Enter height: "))
+column = int(input("Enter number of columns: "))
+value = 1
+for x in range(height):
+    for x in range(column):
+        print(value, end=" ")
+    value += 1
+    print()
+
