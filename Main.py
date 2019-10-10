@@ -266,3 +266,50 @@ for x in range(height):
     value += 1
     print()
 
+
+# PYTHON ACTIVITY 11: PREDEFINED/BUILT-IN FUNCTIONS
+print(abs(4.67))
+print(pow(5,3))
+print(pow(49,.5))
+print(int(34.8))
+print(round(6.9))
+import random
+print(random.randint(1,100))
+
+abs(4.5)
+int("678")
+round(-5.6)
+import random
+random.randint(4,10)
+# without running [import random] it will not have the random module to generate a random number
+
+import math
+x = 4.7
+y = 5.3
+z = -4.8
+a = -3.2
+print(math.ceil(x))
+print(math.ceil(y))
+print(math.ceil(z))
+print(math.ceil(a))
+print(math.floor(x))
+print(math.floor(y))
+print(math.floor(z))
+print(math.floor(a))
+# The ceil() function rounds up with positive numbers and rounds down with negative numbers
+# The floor() function rounds down with positive numbers and rounds up with negative numbers
+# They must be preceded by [math.] because they are a math module
+
+# Following is an example program
+doAgain = True
+while doAgain:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    num3 = int(input("Enter third number: "))
+    num4 = int(input("Enter fourth number: "))
+    maxNum1 = max(num1, num2, num3, num4)
+    print("The largest of the four numbers is: ", maxNum1)
+    another = input("Type 'y' to find another max number " + "or any other key to quit")
+    if another != 'y':
+        doAgain = False
+print("Done!")
