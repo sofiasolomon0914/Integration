@@ -298,7 +298,7 @@ print(math.floor(z))
 print(math.floor(a))
 # The ceil() function rounds up with positive numbers and rounds down with negative numbers
 # The floor() function rounds down with positive numbers and rounds up with negative numbers
-# They must be preceded by [math.] because they are a math module
+# They must be preceded by [math.] because they are a math modulet
 
 # Following is an example program
 doAgain = True
@@ -313,3 +313,35 @@ while doAgain:
     if another != 'y':
         doAgain = False
 print("Done!")
+
+
+# PYTHON ACTIVITY 12: Void Functions
+
+# Description: This program uses a function to print a message
+# Function definition
+def printMessage():
+    print("Welcome to Python.")
+    print("Learn the power of functions!")
+    # Function definition
+def main():
+    print("Hello Programmer!")
+    # Function call
+    printMessage()
+# Function call
+main()
+
+# Description: This program uses functions to calculate
+# the area of a circle, given the radius
+import math
+def calculateArea(radius):
+    area = math.pi * radius ** 2
+    print("Area of a circle with a radius of", radius, "is",
+          format(area, ".2f"))
+    diameter = radius * 2
+    print("The diameter is ", diameter)
+def main():
+    radius = int(input("Enter the radius: "))
+    calculateArea(radius)
+
+##### Call to Main #####
+main()
