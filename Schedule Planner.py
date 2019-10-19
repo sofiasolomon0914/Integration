@@ -68,20 +68,24 @@ print("Congratulations!!! You have finished all of your activities! Now it is ti
 userMood = str(input("\nHow are you feeling? Please choose between the following: tired, hyper, nervous, tense, upset, "
                      "depressed, calm. "))
 
-moodTired = True
-while moodTired:
+moodLoop = True
+while moodLoop:
     if userMood == "tired":
         print("\nMaybe try taking a nap. Or if you are tired but can't fall asleep try doing something relaxing but "
               "engaging, like reading or writing.")
-        moodTired = False
-
-moodHyper = True
-while moodHyper:
+        moodLoop = False
     if userMood == "hyper":
         print("\nGo out and have some fun!! See if there is a party or event you can go to! Just remember to  be "
               "careful, partying is fun, but not when you overdue it...")
-        moodHyper = False
-        
+        moodLoop = False
+    if userMood == "nervous":
+        print("\nOh no! Try taking some deep breaths. Then try to figure out what is making you nervous and see if "
+              "you can find a solution to the problem. Try writing down and brainstorming solutions. If you are "
+              "worrying to much about he future, remember, you cannot control the future. Do your best in the "
+              "present and your future will work itself out.")
+        moodLoop = False
+
+
 
 
 
