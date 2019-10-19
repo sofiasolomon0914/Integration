@@ -345,3 +345,17 @@ def main():
 
 ##### Call to Main #####
 main()
+
+
+# ACTIVITY: VALUE RETURNING FUNCTIONS
+
+import math
+def getQuadratic(a,b):
+    square = a**2 + b**2
+    squareRoot = math.sqrt(square)
+    return squareRoot
+def main():
+    print("The square root of the sum of the square of 3 and 4 is:", getQuadratic(3,4))
+
+######### Call to main() ##########
+main()
