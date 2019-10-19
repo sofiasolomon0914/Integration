@@ -20,6 +20,7 @@ quality_ptsFour = classFourCredit * classFourGrade
 quality_ptsFive = classFiveCredit * classFiveGrade
 quality_ptsTotal = quality_ptsOne + quality_ptsTwo + quality_ptsThree + quality_ptsFour + quality_ptsFive
 semesterGPA = quality_ptsTotal / totalCredits
-print("Your predicted semester GPA is ", semesterGPA, "0.2f")
+print("Your predicted semester GPA is {:.2f}".format(semesterGPA))
+
 
 

@@ -2,9 +2,11 @@
 # This program will help people use their free time more effectively by asking what they have done and
 # what they feel like doing to generate suggestions of what they can do in their free time.
 
-print("\nHello! I will ask you some questions to help you figure out what you should be doing right now. \nPlease keep in mind that this program is case sensitive and that you should answer each question in lowercase letters. ")
+print("\nHello! I will ask you some questions to help you figure out what you should be doing right now. \nPlease "
+      "keep in mind that this program is case sensitive and that you should answer each question in lowercase "
+      "letters. ")
 
-
+# The following activities are part of the first section or tier of activities
 activity_homework = str(input("\nHave you completed all of your homework assignments? "))
 tier_homework = True
 while tier_homework:
@@ -36,6 +38,50 @@ while tier_organize:
               "next group of activities!")
         tier_organize = False
 
+# The following activities are part of the second tier of activities.
+
+activity_study = str(input("\nDo you feel prepared for all of your exams and quizzes for the next week? "))
+tier_study = True
+while tier_study:
+    if activity_study == "no":
+        print("Go study for your exams and classes until you feel prepared.")
+        tier_study = False
+    if activity_study == "yes":
+        print("Good job!")
+        activity_music = str(input("Have you practiced all of your music for orchestra? "))
+        tier_study = False
+
+tier_music = True
+while tier_music:
+    if activity_music == "no":
+        print("Go and practice. Make sure to practice for rehearsals and auditions!")
+        tier_music = False
+    if activity_music == "yes":
+        print("Good job!")
+        activity_socialMedia = str(input("Have you answered all of your emails, text messages and calls? "))
+        tier_music = False
+print("Congratulations!!! You have finished all of your activities! Now it is time to figure out what activity you "
+      "will enjoy the most with your free time!")
+
+# The following section with suggest the user activities based on their mood
+
+userMood = str(input("\nHow are you feeling? Please choose between the following: tired, hyper, nervous, tense, upset, "
+                     "depressed, calm. "))
+
+moodTired = True
+while moodTired:
+    if userMood == "tired":
+        print("\nMaybe try taking a nap. Or if you are tired but can't fall asleep try doing something relaxing but "
+              "engaging, like reading or writing.")
+        moodTired = False
+
+moodHyper = True
+while moodHyper:
+    if userMood == "hyper":
+        print("\nGo out and have some fun!! See if there is a party or event you can go to! Just remember to  be "
+              "careful, partying is fun, but not when you overdue it...")
+        moodHyper = False
+        
 
 
 
